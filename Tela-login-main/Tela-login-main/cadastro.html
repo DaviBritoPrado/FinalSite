@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="icon" href="Imagens/icons.png" type="image/png">
+</head>
+<body>
+    <header>
+        <img src="Imagens/2_20240616_175104_0001.png" id="ma">
+    </header>
+    <section>
+            <span>Criar uma conta</span>
+            <div class="inputs">
+            <form>
+                <input type="email" placeholder="E-mail" required maxlength="30">
+                <input type="text"  placeholder="Usuário" required maxlength="30">  
+                <input type="tel" placeholder="Telefone" required pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" title="(00)0000-0000" maxlength="14"> 
+                <input type="password"  placeholder="Senha" required maxlength="30">
+                <input type="text"  placeholder="CPF/CNPJ" required maxlength="30">
+                <div class="botao">
+                    <button class="enviar"><img src="Imagens/icons8-seta-longa-à-direita.gif"></button>
+                </div>
+            </form>
+            </div>
+            <h1>Continuar como:</h1>
+            <div class="logos"> 
+                <button id="face"><img src="Imagens/facebook-icon-white-png-1200x1200.png" ></button>
+                <button id="google"><img src="Imagens/google.png" ></button>
+                <button id="apple"><img src="Imagens/icons8-mac-os-50.png"> </button>
+            </div>
+            <div class="login">
+                   <a href="index.html"><h3>eu já tenho conta </h3></a>
+                   <img src="Imagens/seta-direita.png" id="seta"> 
+            </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Reset margin and padding, set default font */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header styling */
+header {
+    width: 100vw;
+    font-size: 16px;
+    font-weight: 750;
+    background-color: #53947B;
+    border-bottom: 5px solid gray;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* Menu styling */
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    height: 80px;
+    align-items: center;
+    color: white;
+}
+
+/* Button styling */
+.bt {
+    background-color: #f4693d;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#us {
+    width: 20px;
+    padding-right: 5px;
+    object-fit: cover;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li {
+    display: flex;
+}
+
+/* Section styling */
+section {
+    background-color: #53947B;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Text container styling */
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Main headline styling */
+.texto2 h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 1);
+}
+
+/* Subheadline styling */
+.texto2 h3 {
+    color: white;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 1);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Button styling */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f4693d;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Image container styling */
+.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.imagem img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* "About us" section styling */
+.nos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* "About us" text styling */
+.texto_nos {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.texto_nos h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+.texto_nos h3 {
+    color: white;
+    font-size: 1rem;
+}
+
+/* "About us" image styling */
+.texto_img {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.texto_img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media queries for different screen sizes */
+
+/* Medium screens */
+@media (max-width: 1450px) {
+    .nos {
+        flex-direction: column;
+    }
+}
+
+/* Smaller screens */
+@media (max-width: 1170px) {
+    .texto_nos {
+        margin: 0 10px;
+    }
+
+    .texto2 h1 {
+        font-size: 2rem;
+    }
+
+    .texto2 h3 {
+        font-size: 1rem;
+    }
+
+    .texto2 .btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #f4693d;
+        border: none;
+        border-radius: 30px;
+        color: white;
+        font-size: 1rem;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+
+    .texto h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .texto {
+        margin-top: 50px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 560px) {
+    .menu {
+        font-size: 12px;
+    }
+
+    .home, .sobre {
+        font-size: 12px;
+    }
+
+    .texto2 h1 {
+        margin-top: 20px;
+    }
+
+    .texto2 h3 {
+        font-size: 0.75rem;
+    }
+
+    .pessoa12 {
+        width: 100%;
+        max-width: 400px;
+        object-fit: contain;
+    }
+
+    .celular {
+        height: 300px;
+    }
+}
+
+/* Extra extra small screens */
+@media (max-width: 400px) {
+    .pessoa12 {
+        width: 100%;
+        max-width: 350px;
+        object-fit: contain;
+   
+    }
+    .bt img{
+        display:none;
+    }
+}
